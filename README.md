@@ -1,10 +1,19 @@
-# ApplicationVersionHtmlHelper
+# Version
 
-[![nuget package](https://badge.fury.io/nu/ApplicationVersionHtmlHelper.png)](http://badge.fury.io/nu/ApplicationVersionHtmlHelper)
+[![][nuget-img]][nuget]
+
+[nuget]:     https://www.nuget.org/packages/Version
+[nuget-img]: https://badge.fury.io/nu/Version.svg
 
 
-I have used [this little snippet](http://stackoverflow.com/a/9486407) countless times to show the system version number on it's footer.
+I have used [this little snippet] countless times to show the system version number on it's footer.
 
-*NuGet package* all the things.
+[this little snippet]: http://stackoverflow.com/a/9486407
 
-![Nuget package all the things](all-the-things.png)
+## Usage
+
+```
+@using VersionLibrary;
+
+<footer>My Great WebSite™ - version @(Html.Version())</footer>
+```

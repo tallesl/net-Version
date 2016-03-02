@@ -1,7 +1,6 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationVersionHtmlHelper", "ApplicationVersionHtmlHelper\ApplicationVersionHtmlHelper.csproj", "{2A4C33F0-BB1B-455C-B114-2A1DC301C36B}"
+﻿Microsoft Visual Studio Solution File, Format Version 11.00
+
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library", "Library\Library.csproj", "{2A4C33F0-BB1B-455C-B114-2A1DC301C36B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -8,8 +8,8 @@
     <ProjectGuid>{2A4C33F0-BB1B-455C-B114-2A1DC301C36B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ApplicationVersionHtmlHelper</RootNamespace>
-    <AssemblyName>ApplicationVersionHtmlHelper</AssemblyName>
+    <RootNamespace>VersionLibrary</RootNamespace>
+    <AssemblyName>Version</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -29,7 +29,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Release\ApplicationVersionHtmlHelper.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\Version.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -64,8 +64,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ApplicationVersion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VersionHtmlHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
