@@ -1,5 +1,6 @@
 ﻿namespace VersionLibrary
 {
+    using System;
     using System.Web.Mvc;
 
     /// <summary>
@@ -14,6 +15,9 @@
         /// <returns>Assembly's version</returns>
         public static string Version(this HtmlHelper html)
         {
+            if (html == null)
+                throw new ArgumentNullException("html");
+
             return html.ViewContext.HttpContext
                 .ApplicationInstance.GetType().BaseType
                 .Assembly.GetName().Version.ToString();
