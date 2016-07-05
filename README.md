@@ -5,15 +5,24 @@
 [nuget]:     https://www.nuget.org/packages/Version
 [nuget-img]: https://badge.fury.io/nu/Version.svg
 
-
-I have used [this little snippet] countless times to show the system version number on it's footer.
-
-[this little snippet]: http://stackoverflow.com/a/9486407
+A ASP.NET MVC HTML Helper that displays the application version number.
 
 ## Usage
+
+On your view:
 
 ```
 @using VersionLibrary;
 
 <footer>My Great WebSite™ - version @(Html.Version())</footer>
+```
+
+It shows either the version of the assembly or the version configured in the Web.config file.
+
+```xml
+<configSections>
+  <section name="Version" type="VersionLibrary.Configuration, Version" />
+</configSections>
+
+<Version VersionToShow="1.0.0-rc3" />
 ```
