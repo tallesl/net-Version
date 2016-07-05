@@ -17,7 +17,7 @@ On your view:
 <footer>My Great WebSite™ - version @(Html.Version())</footer>
 ```
 
-It shows either the version of the assembly or the version configured in the Web.config file.
+It shows either the version of the assembly (AssemblyInfo.cs) or the version configured in the Web.config file.
 
 ```xml
 <configSections>
